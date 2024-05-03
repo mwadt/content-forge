@@ -7,6 +7,7 @@
     <title><%= blog._id %></title>
 </head>
 <body>
+    <%- include('../partials/nav.ejs') %>
     <main>
         <form action="/blogs/<%= blog._id %>?_method=put" method=post>
             <fieldset aria-labelledby="new-blog-legend">
